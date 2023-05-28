@@ -15,6 +15,7 @@ const config: ForgeConfig = {
   plugins: [
     new WebpackPlugin({
       mainConfig,
+      devContentSecurityPolicy: "connect-src 'self' https://cdn.tailwindcss.com 'unsafe-eval'",
       renderer: {
         config: rendererConfig,
         entryPoints: [

@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Main() {
-  return <main>Hi mom!</main>
+  return <main className="bg-red-500 text-white">Hi mom!</main>
 }
